@@ -2,7 +2,7 @@ name: Optimize and package Datapack
 on:
   push:
     tags:
-      - 'release'
+      - '**'
 jobs:
   packsquash:
     name: Optimize Datapack
@@ -18,7 +18,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: Optimized pack
+      - name: Rename zip
+        runs: mv pack.zip woodcutter.zip
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: pack.zip
+          files: woodcutter.zip
