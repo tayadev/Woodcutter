@@ -19,7 +19,7 @@ jobs:
         with:
           name: Optimized pack
       - name: Rename zip
-        runs: mv pack.zip woodcutter.zip
+        run: mv pack.zip woodcutter.zip
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
