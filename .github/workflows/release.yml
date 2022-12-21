@@ -21,4 +21,4 @@ jobs:
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: woodcutter.zip
+          files: pack.zip
