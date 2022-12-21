@@ -5,14 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Archive Release
-      uses: thedoctor0/zip-release@main
-      with:
-        type: 'zip'
-        filename: 'woodcutter.zip'
-        exclusions: '*.git* *.js'
     - name: Upload Archive
       uses: actions/upload-artifact@v3
       with:
-        name: woodcutter.zip
-        path: woodcutter.zip
+        name: woodcutter
+        path: /
