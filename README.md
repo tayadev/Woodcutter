@@ -7,4 +7,4 @@
 
 Allows you to use the stonecutter to cut down wood, just like it can cut stone
 
-[Download](https://github.com/tayadev/Woodcutter/releases/download/latest/woodcutter.zip)
+[Download](https://github.com/tayadev/Woodcutter/releases/download/latest)
