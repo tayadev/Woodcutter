@@ -1,7 +1,7 @@
 {
     "display": {
         "title": "Woodcutter",
-        "description": "${pack.description}",
+        "description": "Allows you to use the stonecutter to cut down wood, just like it can cut stone",
         "icon": {
             "item": "oak_planks"
         },

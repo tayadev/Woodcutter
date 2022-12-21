@@ -19,8 +19,8 @@ jobs:
         with:
           name: Optimized pack
       - name: Rename zip
-        run: mv pack.zip woodcutter.zip
+        run: mv pack.zip ${{ github.event.repository.name }}.zip
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          files: woodcutter.zip
+          files: ${{ github.event.repository.name }}.zip
