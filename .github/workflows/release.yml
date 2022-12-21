@@ -1,12 +1,24 @@
-name: Create Archive
-on: [push]
+name: Optimize and package Datapack
+on:
+  push:
+    tags:
+      - 'release'
 jobs:
-  build:
+  packsquash:
+    name: Optimize Datapack
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Upload Archive
-      uses: actions/upload-artifact@v3
-      with:
-        name: woodcutter
-        path: /home/runner/work/Woodcutter/Woodcutter
+      - name: Clone repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Run PackSquash
+        uses: ComunidadAylas/PackSquash-action@v3
+      - name: Download optimized pack
+        uses: actions/download-artifact@v3
+        with:
+          name: Optimized pack
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: woodcutter.zip
