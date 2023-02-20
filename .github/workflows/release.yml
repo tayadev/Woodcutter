@@ -13,6 +13,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - name: Get version
+        id: get-version
+        uses: CumulusDS/get-yaml-paths-action@v1.0.1
+        with:
+          file: beet.yml
+          version: version
       - name: Download artifact
         id: download-artifact
         uses: dawidd6/action-download-artifact@v2
@@ -24,7 +31,7 @@ jobs:
       - name: Create Github Release
         uses: softprops/action-gh-release@v1
         with:
-          files: out/*.zip
+          files: out/${{github.event.repository.name}}-${{steps.get-version.outputs.version}}.zip
       - name: Create Modrinth Release
         if: ${{ env.modrinth_project_id != null }}
         uses: RubixDev/modrinth-upload@v1.0.0
@@ -32,7 +39,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           file_path: out/*.zip
           name: ${{ github.event.repository.name }} ${{ github.event.release.tag_name }}
-          version: ${{ github.event.release.tag_name }}
+          version: ${{steps.get-version.outputs.version}}
           changelog: ${{ github.event.release.body }}
           game_versions: ${{env.minecraft_versions}}
           loaders: datapack 
