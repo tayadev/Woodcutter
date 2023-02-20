@@ -31,15 +31,15 @@ jobs:
       - name: Create Github Release
         uses: softprops/action-gh-release@v1
         with:
-          files: out/${{github.event.repository.name}}-${{steps.get-version.outputs.version}}.zip
+          files: out/*.zip
       - name: Create Modrinth Release
         if: ${{ env.modrinth_project_id != null }}
         uses: RubixDev/modrinth-upload@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          file_path: out/*.zip
+          file_path: out/${{github.event.repository.name}}-${{steps.get-version.outputs.version}}.zip
           name: ${{ github.event.repository.name }} ${{ github.event.release.tag_name }}
-          version: ${{steps.get-version.outputs.version}}
+          version: ${{ github.event.release.tag_name }}
           changelog: ${{ github.event.release.body }}
           game_versions: ${{env.minecraft_versions}}
           loaders: datapack 
