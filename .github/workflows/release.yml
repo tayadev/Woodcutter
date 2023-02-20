@@ -27,7 +27,7 @@ jobs:
           files: out/*.zip
       - name: Create Modrinth Release
         if: ${{ env.modrinth_project_id != null }}
-        uses: RubixDev/modrinth-upload@v1
+        uses: RubixDev/modrinth-upload@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           file_path: out/*.zip
