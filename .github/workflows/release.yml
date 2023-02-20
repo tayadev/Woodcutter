@@ -1,26 +1,40 @@
-name: Optimize and package Datapack
+name: Release
+
+env:
+  modrinth_project_id: "boWXaKrz"
+  minecraft_versions: 1.19,1.19.1,1.19.2,1.19.3
+
 on:
   push:
     tags:
-      - '**'
+      - "v*.*.*"
+
 jobs:
-  packsquash:
-    name: Optimize Datapack
+  release:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
+      - name: Download artifact
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v2
         with:
-          fetch-depth: 0
-      - name: Run PackSquash
-        uses: ComunidadAylas/PackSquash-action@v3
-      - name: Download optimized pack
-        uses: actions/download-artifact@v3
-        with:
-          name: Optimized pack
-      - name: Rename zip
-        run: mv pack.zip ${{ github.event.repository.name }}.zip
-      - name: Create release
+          workflow: build.yml
+          workflow_conclusion: success
+          skip_unpack: true
+          path: out
+      - name: Create Github Release
         uses: softprops/action-gh-release@v1
         with:
-          files: ${{ github.event.repository.name }}.zip
+          files: out/*.zip
+      - name: Create Modrinth Release
+        if: ${{ env.modrinth_project_id != null }}
+        uses: RubixDev/modrinth-upload@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          file_path: out/*.zip
+          name: ${{ github.event.repository.name }} ${{ github.event.release.tag_name }}
+          version: ${{ github.event.release.tag_name }}
+          changelog: ${{ github.event.release.body }}
+          game_versions: ${{env.minecraft_versions}}
+          loaders: datapack 
+          featured: true
+          project_id: ${{env.modrinth_project_id}}
