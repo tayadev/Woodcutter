@@ -1,0 +1,32 @@
+types:
+  - acacia
+  - bamboo
+  - birch
+  - cherry
+  - name: crimson
+    type: nether
+  - dark_oak
+  - jungle
+  - mangrove
+  - oak
+  - spruce
+  - name: warped
+    type: nether
+
+counts:
+  wood: 1
+  stripped_wood: 1
+
+items:
+  - button
+  - door
+  - fence
+  - fence_gate
+  - name: hanging_sign
+    count: 1
+  - pressure_plate
+  - sign
+  - name: slab
+    count: 2
+  - stairs
+  - trapdoor
