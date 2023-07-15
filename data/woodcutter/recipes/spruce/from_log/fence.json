@@ -1,0 +1,11 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "spruce_log" },
+    { "item": "spruce_wood" },
+    { "item": "stripped_spruce_log" },
+    { "item": "stripped_spruce_wood" }
+  ],
+  "result": "spruce_fence",
+  "count": 3
+}

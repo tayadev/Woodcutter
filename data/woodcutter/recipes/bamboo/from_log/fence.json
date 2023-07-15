@@ -1,0 +1,9 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "bamboo_block" },
+    { "item": "stripped_bamboo_block" }
+  ],
+  "result": "bamboo_fence",
+  "count": 2
+}

@@ -1,0 +1,10 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "mangrove_log" },
+    { "item": "mangrove_wood" },
+    { "item": "stripped_mangrove_log" }
+  ],
+  "result": "stripped_mangrove_wood",
+  "count": 1
+}

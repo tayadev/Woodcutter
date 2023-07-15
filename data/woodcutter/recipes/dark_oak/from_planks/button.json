@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "dark_oak_planks"
+  },
+  "result": "dark_oak_button",
+  "count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "birch_log" },
+    { "item": "birch_wood" },
+    { "item": "stripped_birch_log" }
+  ],
+  "result": "stripped_birch_wood",
+  "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "acacia_log" }
+  ],
+  "result": "stripped_acacia_log",
+  "count": 1
+}

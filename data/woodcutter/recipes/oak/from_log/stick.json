@@ -1,0 +1,11 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "oak_log" },
+    { "item": "oak_wood" },
+    { "item": "stripped_oak_log" },
+    { "item": "stripped_oak_wood" }
+  ],
+  "result": "stick",
+  "count": 8
+}

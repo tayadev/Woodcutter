@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "crimson_stem"
+  },
+  "result": "crimson_hyphae",
+  "count": 1
+}

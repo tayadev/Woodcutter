@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "warped_planks"
+  },
+  "result": "warped_stairs",
+  "count": 1
+}

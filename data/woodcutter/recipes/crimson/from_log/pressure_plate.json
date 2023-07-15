@@ -1,0 +1,11 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "crimson_stem" },
+    { "item": "crimson_hyphae" },
+    { "item": "stripped_crimson_stem" },
+    { "item": "stripped_crimson_hyphae" }
+  ],
+  "result": "crimson_pressure_plate",
+  "count": 2
+}

@@ -1,0 +1,11 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "acacia_log" },
+    { "item": "acacia_wood" },
+    { "item": "stripped_acacia_log" },
+    { "item": "stripped_acacia_wood" }
+  ],
+  "result": "acacia_trapdoor",
+  "count": 2
+}

@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "acacia_planks"
+  },
+  "result": "acacia_slab",
+  "count": 2
+}

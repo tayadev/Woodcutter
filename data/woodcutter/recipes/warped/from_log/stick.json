@@ -1,0 +1,11 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "warped_stem" },
+    { "item": "warped_hyphae" },
+    { "item": "stripped_warped_stem" },
+    { "item": "stripped_warped_hyphae" }
+  ],
+  "result": "stick",
+  "count": 8
+}

@@ -1,0 +1,11 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "jungle_log" },
+    { "item": "jungle_wood" },
+    { "item": "stripped_jungle_log" },
+    { "item": "stripped_jungle_wood" }
+  ],
+  "result": "jungle_door",
+  "count": 2
+}

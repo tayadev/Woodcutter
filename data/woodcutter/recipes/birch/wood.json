@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "birch_log"
+  },
+  "result": "birch_wood",
+  "count": 1
+}

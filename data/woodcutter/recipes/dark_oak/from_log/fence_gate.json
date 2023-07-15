@@ -1,0 +1,11 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "dark_oak_log" },
+    { "item": "dark_oak_wood" },
+    { "item": "stripped_dark_oak_log" },
+    { "item": "stripped_dark_oak_wood" }
+  ],
+  "result": "dark_oak_fence_gate",
+  "count": 1
+}

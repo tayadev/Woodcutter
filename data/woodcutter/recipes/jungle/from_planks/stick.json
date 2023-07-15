@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "jungle_planks"
+  },
+  "result": "stick",
+  "count": 2
+}

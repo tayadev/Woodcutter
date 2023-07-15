@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "crimson_planks"
+  },
+  "result": "crimson_slab",
+  "count": 2
+}

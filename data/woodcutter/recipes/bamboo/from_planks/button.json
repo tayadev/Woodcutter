@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "bamboo_planks"
+  },
+  "result": "bamboo_button",
+  "count": 1
+}

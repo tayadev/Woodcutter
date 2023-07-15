@@ -1,0 +1,9 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "bamboo_planks" },
+    { "item": "bamboo_mosaic" }
+  ],
+  "result": "stick",
+  "count": 2
+}

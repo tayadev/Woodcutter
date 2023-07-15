@@ -1,0 +1,11 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "cherry_log" },
+    { "item": "cherry_wood" },
+    { "item": "stripped_cherry_log" },
+    { "item": "stripped_cherry_wood" }
+  ],
+  "result": "cherry_pressure_plate",
+  "count": 2
+}

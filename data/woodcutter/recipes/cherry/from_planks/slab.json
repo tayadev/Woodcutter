@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "cherry_planks"
+  },
+  "result": "cherry_slab",
+  "count": 2
+}

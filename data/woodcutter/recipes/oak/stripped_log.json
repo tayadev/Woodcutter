@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": [
+    { "item": "oak_log" }
+  ],
+  "result": "stripped_oak_log",
+  "count": 1
+}

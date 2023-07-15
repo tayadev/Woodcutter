@@ -1,0 +1,8 @@
+{
+  "type": "stonecutting",
+  "ingredient": {
+    "item": "cherry_planks"
+  },
+  "result": "stick",
+  "count": 2
+}
